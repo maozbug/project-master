@@ -11,8 +11,8 @@ export class FilmsComponent implements OnInit {
   constructor(list:ListsService) { 
 	this.filmsList=list.getPlayNow()
 	this.playsoon=list.getPlaySoon()
-	console.log(this.filmsList);
-	console.log(this.playsoon);
+//	console.log(this.filmsList);
+//	console.log(this.playsoon);
   }
   ngOnInit() {
   }

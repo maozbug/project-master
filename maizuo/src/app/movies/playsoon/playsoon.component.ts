@@ -8,7 +8,7 @@ import { MovieListService } from '../movie-list.service';
 export class PlaysoonComponent implements OnInit {
 	private playsoon:Array<any>
   constructor(playing:MovieListService) {
-		console.log(playing.getPlaySoon())
+//		console.log(playing.getPlaySoon())
 		this.playsoon=playing.getPlaySoon()
   }
   ngOnInit() {

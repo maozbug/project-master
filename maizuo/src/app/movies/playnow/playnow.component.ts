@@ -8,7 +8,7 @@ import { MovieListService } from '../movie-list.service';
 export class PlaynowComponent implements OnInit {
 	private playnow:Array<any>
   constructor(playing:MovieListService) {
-		console.log(playing.getPlayNow())
+//		console.log(playing.getPlayNow())
 		this.playnow=playing.getPlayNow()
   }
 

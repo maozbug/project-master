@@ -11,7 +11,7 @@ export class ScrollComponent implements OnInit {
 	private scroll:Array<any>=[]
 	constructor(list:ScrlistService) {
 			this.scroll=list.getService()
-			console.log(this.scroll)
+//			console.log(this.scroll)
 	}
   ngOnInit() {
   	window.onload=function(){
