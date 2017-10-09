@@ -1,0 +1,45 @@
+ul{
+	list-style: none;
+}
+.films{
+	padding: 5px 16px;
+}
+.films .nav{
+	display: flex;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+    margin: 0 auto;
+    border-bottom: solid #fe6e00 1px;
+}
+.films .nav li{
+	flex: 1;
+	font-size: 16px;
+}
+.films .nav li:first-child{
+	color: #fe6e00;
+    border-bottom: solid;
+}
+.filmslist{
+	padding: 0;
+}
+.filmslist li{
+	padding: 20px 0;
+}
+.filmslist li img{
+	width: 20%;
+}
+.filmslist li .dital-text{
+	float: right;
+	width: 80%;
+}
+.filmslist li .dital-text .header{
+	display: flex;
+}
+.filmslist li .dital-text .header .title{
+	flex: 5;
+	font-size: 16px;
+}
+.filmslist li .dital-text .header .grade,.filmslist li .dital-text .header .more{
+	flex: 1;
+}

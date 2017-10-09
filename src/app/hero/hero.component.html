@@ -1,0 +1,15 @@
+<div id="hero">
+	<div class="add">
+		<input type="text" [(ngModel)]="newhero" (keyup.enter)="addhero()" (blur)="addhero()"/>
+		<button (click)="addhero()">添加</button>
+	</div>
+	<ul>
+		<li *ngFor="let hero of heroList;let i = index">
+			<span>{{i+1}}</span>
+			<span *ngIf="hero.edittype" class="name">{{hero.name}}</span>
+			<input *ngIf="!hero.edittype" type="text" [value]="hero.name" (keyup.enter)="editEnd(i)" [(ngModel)]="hero.name"/>
+			<button (click)="updatehero(i)">修改</button>
+			<button (click)="delhero(i)">删除</button>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,27 @@
+.red{
+	color: red;
+}
+.pink{
+	color: pink;
+}
+#tem{
+	width:800px;
+	margin:0 auto;
+}
+.flowerList{
+	display:flex;
+}
+.flowerList li{
+	list-style: none;
+	flex:1;
+	display:flex;
+	flex-direction: column;
+}
+.flowerList li input{
+	flex:1
+}
+.flowerList li img{
+	max-width:100px;
+	max-height:100px;
+	flex:5;
+}

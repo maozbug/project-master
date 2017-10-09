@@ -1,0 +1,54 @@
+<div id="tem">
+	<h1>
+		鲜花表
+	</h1>
+	<ul class="flowerList">
+		<li>
+			<input type="radio" name="flower" id="flower" value="meigui" [(ngModel)]="flowerName"/>
+			<img src="../../assets/img/meigui.jpg" alt="" />
+		</li>
+		<li>
+			<input type="radio" name="flower" id="flower" value="mudan" [(ngModel)]="flowerName"/>
+			<img src="../../assets/img/mudan.jpg" alt="" />
+		</li>
+		<li>
+			<input type="radio" name="flower" id="flower" value="hehua" [(ngModel)]="flowerName"/>
+			<img src="../../assets/img/hehua.jpg" alt="" /><br />
+		</li>
+		<li>
+			<input type="radio" name="flower" id="flower" value="taohua" [(ngModel)]="flowerName"/>
+			<img src="../../assets/img/taohua.jpg" alt="" /><br />
+		</li>
+	</ul>
+	<div>
+		您选的花是：
+	</div>
+	<span [ngSwitch]="flowerName">
+		<span *ngSwitchCase="'meigui'" [class]="pink">玫瑰</span>
+		<span *ngSwitchCase="'mudan'" [class]="pink">牡丹</span>
+		<span *ngSwitchCase="'hehua'" [class]="pink">荷花</span>
+		<span *ngSwitchCase="'taohua'" [class]="pink">桃花</span>
+		<span *ngSwitchDefault [class]="red">您还未来的及选花！</span>
+	</span>
+</div>
+<div id="tem">
+	<h1>
+		鲜花表1
+	</h1>
+	<ul class="flowerList" >
+		<li *ngFor="let flower of flowerList">
+			<img [src]="flower.url" alt="" />
+			<input type="radio" value={{flower.value}} name="flowers" [(ngModel)]="flowerName"/>
+		</li>
+	</ul>
+	<div>
+		您选的花是：
+	</div>
+	<span [ngSwitch]="flowerName">
+		<span *ngSwitchCase="'meigui'" [class]="pink">玫瑰</span>
+		<span *ngSwitchCase="'mudan'" [class]="pink">牡丹</span>
+		<span *ngSwitchCase="'hehua'" [class]="pink">荷花</span>
+		<span *ngSwitchCase="'taohua'" [class]="pink">桃花</span>
+		<span *ngSwitchDefault [class]="red">您还未来的及选花！</span>
+	</span>
+</div>

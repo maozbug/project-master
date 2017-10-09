@@ -1,0 +1,27 @@
+<div id="shop">
+	<ul class="shop">
+		<li *ngFor="let goods of goodsList">
+			<span>商品：{{goods.name}}</span>
+			<span>单价：{{goods.price}}</span>
+			<span>邮费：{{goods.youfei}}</span>
+			<span>
+				<button (click)="add(goods)">加入购物车</button>
+			</span>
+		</li>
+	</ul>
+	<div class="shopCar">
+		<h1>购物车</h1>
+		<ul>
+			<li *ngFor="let goods of shopCarList">
+				<span>{{goods.name}}</span>
+				<span>
+					<button (click)="jian(goods)">-</button>
+					<input type="num" name="num" id="num" [value]="goods.num" />
+					<button (click)="jia(goods)">+</button>
+				</span>
+				<span>{{goods.sumMoney |currency:'RMB'}}</span>
+			</li>
+		</ul>
+		<span>{{sumall}}</span>
+	</div>
+</div>

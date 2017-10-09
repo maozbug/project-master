@@ -1,0 +1,15 @@
+<div id="stu">
+	<h1>学生信息表</h1>
+	<input type="text"  [(ngModel)]="searchs"/>
+	<table cellspacing="0" cellpadding="0">
+		<tr>
+			<th *ngFor="let stu of stuhead">{{stu}}</th>
+		</tr>
+		<tr *ngFor="let stu of stubody|search:searchs;let i = index" [style.background-color]="i%2==0?'gainsboro' :'blueviolet'">
+			<td >{{stu.name}}</td>
+			<td>{{stu.gander}}</td>
+			<td>{{stu.address}}</td>
+			<td>{{stu.age}}</td>
+		</tr>
+	</table>
+</div>

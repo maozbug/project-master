@@ -1,0 +1,19 @@
+#stu{
+	width:800px;
+	margin:20px auto;
+}
+#stu input{
+	width: 200px;
+	margin:5px 200px;
+}
+#stu>h1{
+	text-align: center;
+}
+#stu table{
+	margin:0 auto;
+}
+#stu table th,#stu table td{
+	width:100px;
+	text-align: center;
+	border:1px solid gainsboro;
+}
